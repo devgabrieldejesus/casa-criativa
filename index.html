@@ -7,6 +7,8 @@
         -> Marcação feitas com <tags>
     Language 
         -> Linguagem | Não é uma linguagem de programação
+
+    HTML SEMÂNTICO
 -->
 <html lang="pt-br">
 <!-- Responsável por receber configurações da página -->
@@ -14,23 +16,119 @@
     <meta charset="UTF-8"> <!-- Codificação dos caracteres na minha página -->
     <title>Casa Criativa</title> <!-- Titulo -->
     <link href="style.css" rel="stylesheet" type="text/css"> <!-- My CSS -->
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet"> <!-- My Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet"> <!-- My Font -->
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1"/>
 </head>
 <body>
-    <img src="logo.png" alt="Imagem da LogoMarca">
-    <p>Ficar em casa em períodos longos, não deve ser nada fácil.</p>
-    <p>
-        Por isso, iremos catalogar ideias, <strong>brincadeiras, jogos, filmes, livros, cursos, dicas</strong> e tudo que for necessário para tornar 
-        esse momento mais interessante.
-    </p>
-    <p>
-        Comece clicando em ver ideias para ver as ideias cadastradas e
-        contribua adicionando a sua ideia
-    </p>
-    <button>+ Adicionar Ideia</button>
-    <button class="fat">Ver ideias</button>
 
-    <p id="footer">Com ❤ Rocketseat</p>
+    <div id="container">
+        <section id="intro">
+
+            <header>
+                <img src="logo.png" alt="Imagem da LogoMarca">
+            </header>
+
+            <!-- Conteudo principal-->
+            <main>
+                <p>Ficar em casa em períodos longos, não deve ser nada fácil.</p>
+                <p>
+                    Por isso, iremos catalogar ideias, <strong>brincadeiras, jogos, filmes, livros, cursos, dicas</strong> e tudo que for necessário para tornar 
+                    esse momento mais interessante.
+                </p>
+                <p>
+                    Comece clicando em ver ideias para ver as ideias cadastradas e
+                    contribua adicionando a sua ideia
+                </p>
+            </main>
+
+            <section id="buttons">
+                <button onclick="onOff()">+ Adicionar Ideia</button>
+                <button class="fat">Ver ideias</button>
+            </section>
+            
+            <footer>
+                Com ❤ Rocketseat
+            </footer>
+            
+        </section>
+        <section id="last-ideias">
+            <div class="idea">
+                <img src="https://image.flaticon.com/icons/svg/2728/2728995.svg" alt="Imagem de Curso de Programação">
+                <div class="content">
+                    <h3>Cursos de Programação</h3>
+                    <p>Estudo</p>
+                    <div class="description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. A cupiditate repellendus sit quasi voluptas! Quam reiciendis praesentium nesciunt veniam totam ratione, natus mollitia necessitatibus pariatur esse dolores rerum. Quia, sunt?
+                    </div>
+                    <a href="#">Ir para a Ideia</a>
+                </div>
+            </div>
+            <div class="idea">
+                <img src="https://image.flaticon.com/icons/svg/2729/2729069.svg" alt="Imagem de Exercícios">
+                <div class="content">
+                    <h3>Exercícios</h3>
+                    <p>Saúde</p>
+                    <div class="description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. A cupiditate repellendus sit quasi voluptas! Quam reiciendis praesentium nesciunt veniam totam ratione, natus mollitia necessitatibus pariatur esse dolores rerum. Quia, sunt?
+                    </div>
+                    <a href="#">Ir para a Ideia</a>
+                </div>
+            </div>
+            <div class="idea">
+                <img src="https://image.flaticon.com/icons/svg/2729/2729027.svg" alt="Imagem de Meditação">
+                <div class="content">
+                    <h3>Meditação</h3>
+                    <p>Mentalidade</p>
+                    <div class="description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. A cupiditate repellendus sit quasi voluptas! Quam reiciendis praesentium nesciunt veniam totam ratione, natus mollitia necessitatibus pariatur esse dolores rerum. Quia, sunt?
+                    </div>
+                    <a href="#">Ir para a Ideia</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <!-- Modal -->
+    <div id="modal" class="hide">
+        <div class="content">
+            <h1>Nova Ideia</h1>
+            <form action="">
+                <div class="input-wrapper">
+                    <label for="title">Título da Ideia</label>
+                    <input type="text" name="title">
+                </div>
+            
+                <div class="input-wrapper">
+                    <label for="category">Categoria</label>
+                    <input type="text" name="category">
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="image">Link da imagem</label>
+                    <input type="url" name="image">
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="description">Digite uma descrição para essa ideia</label>
+                    <textarea name="description" cols="30" rows="10"></textarea>
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="link">Link da Ideia</label>
+                    <input type="url" name="link">
+                </div>
+
+                <a href="#" onclick="onOff()">Voltar</a>
+                <button>Salvar</button>
+            </form>
+        </div>
+    </div>
+
+
+
+
+
 
 
     <script src="script.js" type="text/javascript"></script>

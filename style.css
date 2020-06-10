@@ -2,7 +2,15 @@
     Cascading StyleSheet
     Estilo em cascata
 
+    No css tudo é BOX
+    BOX > box ou textos ou img
+
 */
+* {
+    outline:none;
+    box-sizing:border-box;
+    font-family:'Lato', sans-serif;
+}
 body {
     margin:0;
     padding:0;
@@ -10,19 +18,178 @@ body {
     text-align:center;
     background-color:#E5E5E5;
 }
-button {
-    border:none;
+a {
     color:#FF5E84;
     font-weight:bold;
+    text-decoration:none;
+}
+a:hover {
+    text-decoration:underline;
+}
+p,
+.description {
+    font-size:16px;
+    line-height:24px;
+    letter-spacing:0.1px;
+}
+#container {
+    display:flex;
+    max-width:980px;
+    margin:40px auto;
+}
+#intro {
+    width:300px;
+    margin-right:20px;
+}
+main {
+    margin:32px 0;
+}
+#buttons {
+    display:flex;
+    justify-content:space-evenly;
+    margin-bottom:32px;
+}
+
+button {
+    border:none;
+    cursor:pointer;
+    color:#FF5E84;
+    font-size:14px;
+    font-weight:bold;
+    line-height:18px;
+    letter-spacing:0.2px;
     background-color:none;
 }
-.fat {
+button:hover {
+    text-decoration:underline;
+}
+button.fat:hover {
+    text-decoration:none;
+}
+button.fat {
+    width:150px;
+    height:40px;
     color:#FFF;
+    border-radius:6px;
+    background-color:#FF5E84;
+    box-shadow:0px 8px 16px #FF005C29;
+}
+footer {
+    text-align:center;
+    color:#777;
+    font-size:14px;
+    font-weight:400;
+    line-height:18px;
+    letter-spacing:0.2px;
+}
+.idea {
+    display:flex;
+    padding:32px;
+    border-radius:8px;
+    margin-bottom:32px;
+    background-color:#FFF;
+    box-shadow:0 4px 16px -8px #0101011A;
+}
+.idea img {
+    width:60px;
+    height:60px;
+    margin-right:32px;
+}
+.idea h3 {
+    margin:0;
+}
+.idea p {
+    color:#777;
+    margin:8px 0;
+}
+.idea .description {
+    margin:16px 0;
+}
+
+/* Modal */
+#modal {
+    top:0;
+    width:100vw;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    position:absolute;
+    transition:all 400ms;
     background-color:#FF5E84;
 }
-p {
-    font-size:18px;
+#modal .content {
+    color:#FFF;
+    margin-top:128px;
 }
-.hide {
-    display:none;
+#modal .content h1 {
+    text-align:center;
+    text-transform:uppercase;
+}
+#modal form {
+    width:80%;
+    display:grid;
+    gap:20px; /* Separação entre as linhas e colunas */
+    grid-template-columns:1fr 1fr; /* 2 columas flexiveis */
+    margin:0 auto;
+    max-width:800px;
+}
+/* Pegar os filho e aplicar um css */
+.content form div:nth-child(3),
+.content form div:nth-child(4),
+.content form div:nth-child(5) {
+    grid-column:span 2; /* Expandi para para 2 colunas */
+}
+form input,
+form textarea {
+    box-sizing:border-box;
+    width:100%;
+    padding:12px;
+    font-size:16px;
+    border-radius:6px;
+    border:1px solid #8d193480;
+}
+form label {
+    font-weight:600;
+    line-height:32px;
+    letter-spacing:0.8px;
+}
+form a {
+    width:150px;
+    height:40px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:6px;
+    color:#FFF;
+    font-size:14px;
+    font-weight:700;
+    align-self:end; /* Proriedades do Grid */
+    justify-self:end; /* Proriedades do Grid */
+    background-color:#FFFFFF22;
+}
+form a:hover {
+    transition:400ms;
+    color:#FF5E84;
+    text-decoration:none;
+    background-color:#FFF;
+}
+form button {
+    cursor:pointer;
+    width:150px;
+    height:40px;
+    margin-top:32px;
+    transition:400ms;
+    border-radius:6px;
+    background-color:#FFF;
+    grid-column:2; /* Colocar ele na coluna 2*/
+    justify-self:end; /* Justificar no fim */
+}
+form button:hover {
+    color:#FFF;
+    text-decoration:none;
+    background-color:#0984E3;
+}
+#modal.hide {
+    opacity:0;
+    visibility:hidden; /* Visibilidade */
 }
