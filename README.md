@@ -1,6 +1,5 @@
-📒 WorkshopDev
+📒   WorkshopDev
 # Reviewing my skills with Rocketseat
 
 # Project: Creative house
-- What is ?
-
+> Project created during the workshop of rocketseat to review my skills
