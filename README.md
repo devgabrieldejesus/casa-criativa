@@ -1,6 +1,6 @@
 # Project: Creative house
 
-> 🚀 Project created during the WorkshopDev of rocketseat to review my skills.
+> 📒 Project created during the WorkshopDev of rocketseat to review my skills.
 
 
 > Web preview
