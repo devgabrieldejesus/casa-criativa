@@ -1,5 +1,28 @@
-# casa-criativa
-> 🚀   Project created during the WorkshopDev of rocketseat to review my skills
+# Project: Creative house
+
+> 🚀 Project created during the WorkshopDev of rocketseat to review my skills.
 
 
-![](public/social-preview-casa-criativa.png)
+> Web preview
+![](public/web-preview.gif)
+
+
+## Release history
+
+* 0.0.1
+    * Work in `progress`
+
+## Meta
+
+Gabriel de Jesus – [My portfolio](https://gabrieldesenvolvedor.com/) – contato@gabrieldesenvolvedor.com
+
+
+[https://github.com/devgabrieldejesus/casa-criativa](https://github.com/devgabrieldejesus/)
+
+## Contributing
+
+1. Fork it (<https://github.com/devgabrieldejesus/casa-criativa/fork>)
+2. Create your feature branch (`git checkout -b feature/fooBar`)
+3. Commit your changes (`git commit -am 'Add some fooBar'`)
+4. Push to the branch (`git push origin feature/fooBar`)
+5. Create a new Pull Request
