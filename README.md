@@ -9,6 +9,7 @@ Therefore, we will catalog ideas, games, games, films, books, courses, tips and 
 ## Example of use
 
 Start by clicking on view ideas to see the ideas registered and contribute by adding your idea.
+
 _Para mais exemplos, consulte a [Wiki][wiki]._ 
 
 ## Release history
