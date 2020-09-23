@@ -1,5 +1,6 @@
 # Casa Criativa
-> Staying at home for long periods shouldn't be easy.
+
+Staying at home for long periods shouldn't be easy.
 
 Therefore, we will catalog ideas, games, games, films, books, courses, tips and everything necessary to make this moment more interesting.
 
@@ -19,7 +20,7 @@ Start by clicking on view ideas to see the ideas registered and contribute by ad
 
 ## Meta
 
-Gabriel de Jesus – [My portfolio](https://www.gabrieldesenvolvedor.com/) – contato@gabrieldesenvolvedor.com
+Gabriel de Jesus – [My portfolio](https://www.gabrieldesenvolvedor.com/) – oi@gabrieldesenvolvedor.com
 
 Distributed under the MIT License. See LICENSE for more information.
 
