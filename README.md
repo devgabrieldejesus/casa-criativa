@@ -38,11 +38,11 @@ Gabriel de Jesus – [My portfolio](https://gabrieldesenvolvedor.com/) – devga
 
 Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
 
-[https://github.com/devgabrieldejesus/casa-criativa](https://github.com/devgabrieldejesus/)
+[https://github.com/gabrieldejesus/casa-criativa](https://github.com/gabrieldejesus/)
 
 ## 🚀 Contribution
 
-1. Make the _fork_ of the project (<https://github.com/devgabrieldejesus/casa-criativa/fork>)
+1. Make the _fork_ of the project (<https://github.com/gabrieldejesus/casa-criativa/fork>)
 2. Create a _branch_ for your modification (`git checkout -b my-new-resource`)
 3. Do _commit_ (`git commit -am 'Adding a new resource ...'`)
 4. _Push_ (`git push origin my-new-feature`)
