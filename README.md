@@ -1,6 +1,6 @@
 # Casa criativa
 
-🏡 Staying at home for long periods shouldn't be easy. Therefore, we will catalog ideas, games, games, films, books, courses, tips and everything necessary to make this moment more interesting.
+🏡 Staying at home for long periods shouldn't be easy. That is why the Casa Criativa project categorizes ideas, games, movies, books, courses, tips and everything necessary to make these moments more interesting.
 
 ![](public/web-preview.gif)
 
